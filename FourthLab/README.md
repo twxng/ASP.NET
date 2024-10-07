@@ -19,19 +19,23 @@ ___
 ### **<p align="center">Скріншоти запитів</p>**
 ___
 
-![](images/Request_Home.png)
+<p align="center">
+  <img src="images/Request_Home.png" alt="Home"/>
+</p>
 <p align="center">Рисунок 1 – Home</p>
-
-![](images/Request_library.png)
+<p align="center">
+  <img src="images/Request_library.png" alt="Library"/>
+</p>
 <p align="center">Рисунок 2 – Library</p>
-
-![](images/Request_Book.png)
+<p align="center">
+  <img src="images/Request_Book.png" alt="Book"/>
+</p>
 <p align="center">Рисунок 3 – Book</p>
-
-
-![](images/Request_User.png)
+<p align="center">
+  <img src="images/Request_User.png" alt="User"/>
+</p>
 <p align="center">Рисунок 4 – User</p>
-
-
-![](images/Request_User_ID.png)
+<p align="center">
+  <img src="images/Request_User_ID.png" alt="User + ID"/>
+</p>
 <p align="center">Рисунок 5 – User + ID</p>
