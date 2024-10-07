@@ -15,4 +15,23 @@
 5. Що таке обмеження маршруту? Для чого воно необхідне? Які види обмежень ви знаєте?
 
 
-![](E:\ASP.Net\FirstLab\FourthLab\Request_Home.png)
+___
+### **<p align="center">Скріншоти запитів</p>**
+___
+
+![](images/Request_Home.png)
+<p align="center">Рисунок 1 – Home</p>
+
+![](images/Request_library.png)
+<p align="center">Рисунок 2 – Library</p>
+
+![](images/Request_Book.png)
+<p align="center">Рисунок 3 – Book</p>
+
+
+![](images/Request_User.png)
+<p align="center">Рисунок 4 – User</p>
+
+
+![](images/Request_User_ID.png)
+<p align="center">Рисунок 5 – User + ID</p>
