@@ -1,0 +1,77 @@
+[
+	{
+		"Title": "Head First Java",
+		"Author": "Kathy Sierra",
+		"Year": 2005
+	},
+	{
+		"Title": "C# in Depth",
+		"Author": "Jon Skeet",
+		"Year": 2013
+	},
+	{
+		"Title": "The C++ Programming Language",
+		"Author": "Bjarne Stroustrup",
+		"Year": 2013
+	},
+	{
+		"Title": "JavaScript: The Definitive Guide",
+		"Author": "David Flanagan",
+		"Year": 2011
+	},
+	{
+		"Title": "Vue.js: Up and Running",
+		"Author": "Callum Macrae",
+		"Year": 2017
+	},
+	{
+		"Title": "Vue.js 2.x by Example",
+		"Author": "Charles Minassi",
+		"Year": 2018
+	},
+	{
+		"Title": "Python Crash Course",
+		"Author": "Eric Matthes",
+		"Year": 2016
+	},
+	{
+		"Title": "HTML and CSS: Design and Build Websites",
+		"Author": "Jon Duckett",
+		"Year": 2011
+	},
+	{
+		"Title": "The Ruby Programming Language",
+		"Author": "David Flanagan",
+		"Year": 2008
+	},
+	{
+		"Title": "Swift Programming Language",
+		"Author": "Apple",
+		"Year": 2014
+	},
+	{
+		"Title": "Go Programming Language",
+		"Author": "Alan A. A. Donovan",
+		"Year": 2015
+	},
+	{
+		"Title": "Deep Learning",
+		"Author": "Ian Goodfellow",
+		"Year": 2016
+	},
+	{
+		"Title": "Python Machine Learning",
+		"Author": "Sebastian Raschka",
+		"Year": 2016
+	},
+	{
+		"Title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+		"Author": "Aurélien Géron",
+		"Year": 2019
+	},
+	{
+		"Title": "Artificial Intelligence: A Modern Approach",
+		"Author": "Stuart Russell",
+		"Year": 2010
+	}
+]

@@ -1,0 +1,37 @@
+[{
+		"Id": 0,
+		"Name": "Stepan Giga",
+		"Nickname": "user3",
+		"Email": "stepan@example.com"
+	},
+	{
+		"Id": 1,
+		"Name": "Oksana Shumakova",
+		"Nickname": "user2",
+		"Email": "oksana@example.com"
+	},
+	{
+		"Id": 2,
+		"Name": "Vladyslav Levchenko",
+		"Nickname": "user1",
+		"Email": "vlad@example.com"
+	},
+	{
+		"Id": 3,
+		"Name": "Irina Lisova",
+		"Nickname": "user4",
+		"Email": "irina@example.com"
+	},
+	{
+		"Id": 4,
+		"Name": "Oleksandr Shevchenko",
+		"Nickname": "user5",
+		"Email": "oleksandr@example.com"
+	},
+	{
+		"Id": 5,
+		"Name": "Irina Lisova",
+		"Nickname": "user6",
+		"Email": "irina@example.com"
+	}
+]
