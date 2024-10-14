@@ -1,0 +1,83 @@
+@{
+	ViewData["Title"] = "Встановлення Cookie";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<style>
+    .flatpickr-calendar {
+        background: rgba(216, 180, 254, 0.3) !important;
+        backdrop-filter: blur(5px) !important;
+    }
+    .flatpickr-day {
+        color: white !important;
+    }
+
+	.flatpickr-day:hover {
+		background: #6208ca !important;
+	}
+    .flatpickr-day.selected {
+        background: #6208ca !important;
+        border-color: #8b5cf6 !important;
+    }
+    .flatpickr-current-month, .flatpickr-monthDropdown-months, .flatpickr-weekday {
+        color: rgb(69, 0, 134) !important;
+    }
+    .flatpickr-time input, .flatpickr-time .flatpickr-time-separator, .flatpickr-time .flatpickr-am-pm {
+        color: white !important;
+    }
+
+		
+    .flatpickr-input[readonly] {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+        background-position: right 10px center !important;
+        background-repeat: no-repeat !important;
+        background-size: 20px !important;
+        padding-right: 40px !important;
+    }
+</style>
+
+<div class="min-h-screen bg-gradient-to-b from-purple-900 to-purple-600 flex items-center justify-center px-4 font-sans">
+	<div class="container mx-auto mt-8 p-6 bg-opacity-100 rounded-lg shadow-md max-w-md">
+		<div class="container p-4 bg-purple-900 bg-opacity-80 rounded-lg shadow-md">
+			<div class="container mx-auto p-6 bg-gray-900 bg-opacity-20 rounded-lg shadow-md max-w-md">
+
+		<h2 class="text-3xl font-extrabold mb-6 text-white text-center">Встановлення Cookie</h2>
+
+		<form asp-controller="Cookie" asp-action="SetCookie" method="post" class="space-y-6">
+			<div>
+				<label for="value" class="block mb-2 text-sm font-medium text-gray-300">Значення:</label>
+				<input type="text" id="value" name="value"
+					class="bg-purple-200 bg-opacity-20 backdrop-filter backdrop-blur-sm border border-purple-300 text-white text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 shadow-[5px_5px_0px_0px_rgba(109,40,217)]"
+					required>
+			</div>
+			<div>
+				<label for="expirationDate" class="block mb-2 text-sm font-medium text-gray-300">Дата та час закінчення:</label>
+				<input type="text" id="expirationDate" name="expirationDate"
+					class="bg-purple-200 bg-opacity-20 backdrop-filter backdrop-blur-sm border border-purple-300 text-white text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 shadow-[5px_5px_0px_0px_rgba(109,40,217)]"
+					required
+					data-enable-time="true"
+					data-date-format="Y-m-d H:i"
+					data-time_24hr="true"
+					data-min-date="today"
+					data-theme="dark">
+			</div>
+			<div class="flex justify-center">
+				<button type="submit"
+					class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Встановити
+					Cookie</button>
+			</div>
+
+
+		</form>
+	</div>			</div>
+
+		</div>
+</div>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		flatpickr("[data-date-format]", {});
+	});
+</script>
