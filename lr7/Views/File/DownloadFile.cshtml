@@ -1,0 +1,81 @@
+@{
+    ViewData["Title"] = "Download File";
+}
+<style>
+    body {
+        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .glass-form {
+        background: rgba(255,255,255,0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 2.5rem;
+        border: 1px solid rgba(255,255,255,0.18);
+        padding: 2.5rem 2rem;
+        max-width: 400px;
+        margin: 2rem auto;
+        box-sizing: border-box;
+    }
+    .glass-form h2 {
+        color: #7c3aed;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .glass-form label {
+        color: #6d28d9;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+    .glass-form input[type="text"] {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        border: none;
+        background: #f3e8ff;
+        box-shadow: 4px 4px 16px #e9d5ff, -4px -4px 16px #fff;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        transition: box-shadow 0.2s;
+        outline: none;
+    }
+    .glass-form input[type="text"]:focus {
+        box-shadow: 0 0 0 2px #a78bfa, 4px 4px 16px #e9d5ff, -4px -4px 16px #fff;
+    }
+    .glass-form button {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        border: none;
+        background: linear-gradient(90deg, #a78bfa 0%, #7c3aed 100%);
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        box-shadow: 0 4px 24px 0 #a78bfa55, 0 1.5px 0 0 #fff inset;
+        cursor: pointer;
+        transition: background 0.2s, box-shadow 0.2s;
+    }
+    .glass-form button:hover {
+        background: linear-gradient(90deg, #7c3aed 0%, #a78bfa 100%);
+        box-shadow: 0 8px 32px 0 #a78bfa77;
+    }
+</style>
+<div class="glass-form">
+    <h2>Завантажити файл</h2>
+    <form asp-action="DownloadFile" asp-controller="File" method="post">
+        <label for="firstName">Ім'я</label>
+        <input type="text" id="firstName" name="firstName" required />
+        <label for="lastName">Прізвище</label>
+        <input type="text" id="lastName" name="lastName" required />
+        <label for="fileName">Назва файлу</label>
+        <input type="text" id="fileName" name="fileName" required />
+        <button type="submit">Продовжити</button>
+    </form>
+</div> 
