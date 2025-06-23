@@ -1,0 +1,81 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+:root {
+  --weather-bg: rgba(255,255,255,0.7);
+  --weather-blur: 16px;
+  --weather-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --weather-border: 1px solid rgba(255,255,255,0.18);
+  --weather-radius: 2rem;
+  --weather-color: #222;
+}
+
+.glassmorph {
+  background: var(--weather-bg);
+  box-shadow: var(--weather-shadow);
+  backdrop-filter: blur(var(--weather-blur));
+  -webkit-backdrop-filter: blur(var(--weather-blur));
+  border-radius: var(--weather-radius);
+  border: var(--weather-border);
+  color: var(--weather-color);
+}
+
+.neumorph {
+  box-shadow: 8px 8px 24px #d1d9e6, -8px -8px 24px #ffffff;
+}
+
+.rounded-4 {
+  border-radius: 2rem !important;
+}
+
+.product-table table {
+  background: transparent;
+  border-radius: var(--weather-radius);
+  overflow: hidden;
+}
+
+.weather-widget {
+  min-width: 320px;
+  min-height: 120px;
+  transition: background 0.5s, color 0.5s;
+}
+
+#weather-form input {
+  background: rgba(255,255,255,0.5);
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#weather-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #258cfb;
+}

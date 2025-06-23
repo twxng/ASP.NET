@@ -1,0 +1,12 @@
+@model Lr9.Models.WeatherInfo
+<div class="weather-widget glassmorph neumorph rounded-4 p-4 mb-4 d-flex align-items-center justify-content-between" id="weather-widget">
+    <div class="d-flex align-items-center">
+        <img src="@($"https://openweathermap.org/img/wn/{Model.Icon}@2x.png")" alt="icon" class="me-3" style="width:64px;height:64px;">
+        <div>
+            <h4 class="mb-1">@Model.City</h4>
+            <div class="fw-bold fs-3">@Model.Temperature&deg;C</div>
+            <div class="text-capitalize">@Model.Description</div>
+        </div>
+    </div>
+    <div class="weather-main fs-1">@Model.Main</div>
+</div> 
