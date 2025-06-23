@@ -1,0 +1,30 @@
+@model IEnumerable<Lr8.Models.Product>
+@{
+    ViewData["Title"] = "Product table";
+}
+<h2 style="color: blueviolet; text-align:center;">Product table</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Created Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td>@product.Price.ToString("F2") $</td>
+            <td>@product.CreatedDate.ToShortDateString()</td>
+            <td>
+					<a asp-action="Details" asp-route-id="@product.Id">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table> 

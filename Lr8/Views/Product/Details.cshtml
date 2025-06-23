@@ -1,0 +1,39 @@
+@model Lr8.Models.Product
+@{
+	ViewData["Title"] = "Product details";
+}
+
+<h2>Product details: @Model.Name</h2>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            ID
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Id
+        </dd>
+        <dt class="col-sm-2">
+            NAme
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Name
+        </dd>
+        <dt class="col-sm-2">
+			Price
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Price.ToString("F2") $
+        </dd>
+        <dt class="col-sm-2">
+			Date of creation
+        </dt>
+        <dd class="col-sm-10">
+            @Model.CreatedDate.ToShortDateString()
+        </dd>
+    </dl>
+</div>
+<div>
+	<a asp-action="List">Turn to the list</a>
+</div> 

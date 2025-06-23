@@ -1,0 +1,15 @@
+@model IEnumerable<Lr8.Models.Product>
+@{
+	ViewData["Title"] = "List of products";
+}
+<h2 style="text-align: center; color: blueviolet;">List of products</h2>
+<ul>
+	@foreach (var product in Model)
+	{
+		<li>
+			<a asp-action="Details" asp-route-id="@product.Id">
+				@product.Id. @product.Name
+			</a> – @product.Price.ToString("F2") $ (@product.CreatedDate.ToShortDateString())
+		</li>
+	}
+</ul>
