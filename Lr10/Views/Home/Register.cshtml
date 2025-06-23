@@ -1,0 +1,45 @@
+@model Lr10.Models.RegistrationViewModel
+@{
+    ViewData["Title"] = "Реєстрація на консультацію";
+    var products = ViewBag.Products as List<string>;
+}
+<link rel="stylesheet" href="~/css/registration.css" />
+<div class="register-glass">
+    <h2 class="mb-4">Реєстрація на консультацію</h2>
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    <form asp-action="Register" method="post" novalidate>
+        <div class="form-group mb-3">
+            <label asp-for="FullName"></label>
+            <input asp-for="FullName" class="form-control neo-input" />
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control neo-input" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="ConsultationDate"></label>
+            <input asp-for="ConsultationDate" class="form-control neo-input" type="date" />
+            <span asp-validation-for="ConsultationDate" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-4">
+            <label asp-for="Product"></label>
+            <select asp-for="Product" class="form-select neo-input">
+                <option value="">Оберіть продукт</option>
+                @foreach (var p in products)
+                {
+                    <option value="@p">@p</option>
+                }
+            </select>
+            <span asp-validation-for="Product" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary neo-btn w-100">Зареєструватися</button>
+    </form>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 
