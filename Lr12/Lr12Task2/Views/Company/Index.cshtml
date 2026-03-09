@@ -1,0 +1,30 @@
+@model IEnumerable<Lr12Task2.Models.Company>
+
+@{
+    ViewData["Title"] = "Компанії";
+}
+
+<h1>Компанії</h1>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Назва</th>
+        <th>Місто</th>
+        <th>Кількість працівників</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var company in Model)
+    {
+        <tr>
+            <td>@company.Id</td>
+            <td>@company.Name</td>
+            <td>@company.City</td>
+            <td>@company.EmployeesCount</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
